@@ -1,12 +1,11 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "CameraFocusSquare.h"
 
 @class RCTCameraManager;
 
 @interface RCTCamera : UIView
 
-@property (nonatomic) RCTCameraManager *manager;
-
-- (id)initWithManager:(RCTCameraManager*)manager;
+- (id)initWithManager:(RCTCameraManager*)manager bridge:(RCTBridge *)bridge;
 
 @end
