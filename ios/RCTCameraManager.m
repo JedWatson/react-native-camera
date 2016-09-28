@@ -429,6 +429,7 @@ RCT_EXPORT_METHOD(hasFlash:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRej
       });
     }]];
 
+    self.previewLayer.connection.videoOrientation = [[UIApplication sharedApplication] statusBarOrientation];
     [self.session startRunning];
   });
 }
